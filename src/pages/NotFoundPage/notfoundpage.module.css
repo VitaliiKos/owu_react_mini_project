@@ -1,0 +1,15 @@
+.notFoundPage {
+    height: 84vh;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 2px;
+    padding-bottom: 50px;
+    background-image: url("Error-404-Not-Found.jpg");
+
+}
+

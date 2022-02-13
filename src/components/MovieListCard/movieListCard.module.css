@@ -1,0 +1,90 @@
+.moviePoster {
+    width: 100%;
+}
+
+.moviePoster > img {
+    width: 100%;
+}
+
+.movieCardLight {
+    background: rgba(11, 155, 227, 0.67);
+}
+
+.movieCard {
+    background: rgba(189, 68, 3, 0.7);
+}
+
+.movieCard, .movieCardLight {
+    width: 17%;
+    padding: 5px;
+}
+
+.movieCard:hover {
+    box-shadow: 0 0 10px 5px rgba(57, 215, 215, 0.8);
+}
+
+.movieCardLight:hover {
+    box-shadow: 0 0 10px 5px rgba(57, 169, 15, 0.8);
+}
+
+.movieCardTitle, .movieCardTitleLight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.movieCardTitle {
+    text-shadow: 10px 10px 10px #0a0a0a, 0 0 25px #e2f505, 0 0 5px #8b3500;
+}
+
+.movieCardTitleLight {
+    text-shadow: 10px 10px 10px #2c2c28, 0 0 25px #15d222, 0 0 5px #00178b;
+
+}
+
+
+.movieCardTitle h3, .movieCardTitleLight h3 {
+    font-style: italic;
+    font-family: "Roboto Light", serif;
+}
+
+.movieCard a {
+    text-decoration: none;
+    color: #8aaf35;
+}
+
+.movieCardLight a {
+    text-decoration: none;
+    color: #131c6c;
+}
+
+.movieRating h5 {
+    margin: 0 0 10px;
+}
+
+/****************************/
+@media screen and (max-width: 1200px) {
+    .movieCard, .movieCardLight {
+        width: 22%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .movieCard, .movieCardLight {
+        width: 46%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movieCard, .movieCardLight {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .movieCardTitle h3, .movieCardTitleLight h3 {
+        font-size: 26px;
+    }
+}

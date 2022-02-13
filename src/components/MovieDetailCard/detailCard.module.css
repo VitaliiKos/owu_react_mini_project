@@ -1,0 +1,169 @@
+.detailCard {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 9;
+    column-gap: 5px;
+    width: 100%;
+    height: 617px;
+}
+
+.moviePoster {
+    width: 37%;
+    padding: 20px;
+    max-height: 597px;
+    display: flex;
+    align-items: center;
+}
+
+.moviePoster img:hover {
+    transform: scaleX(-1);
+}
+
+.moviePoster img {
+    box-shadow: 0 0 10px 10px rgba(99, 128, 224, 0.8);
+    max-width: 80%;
+    max-height: 597px;
+    margin: auto;
+}
+
+.movieDetail, .movieDetailLight {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 617px;
+}
+
+.movieDetail {
+    color: #c0c0c0;
+    background-color: rgba(19, 19, 19, 0.7);
+}
+
+.movieDetailLight {
+    color: #1e1c1c;
+    background-color: rgba(205, 229, 248, 0.7);
+}
+
+.moviePosterDescription h1 {
+    text-shadow: 10px 10px 10px #1cd9a7, 0 0 0 #f5053d, 0 0 1px #0bb8ec;
+    font-size: 32px;
+    margin: 10px;
+}
+
+.moviePosterDescription h2 {
+    text-shadow: 10px 10px 10px #1cd9a7, 0 0 0 #f5053d, 0 0 1px #0bb8ec;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.moviePosterDescription h3 {
+    font-size: 26px;
+    margin: 10px;
+}
+
+.moviePosterDescription h4 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.moviePosterDescription {
+    font-family: Monotype Corsiva, cursive;
+}
+
+.moviePosterDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 62%;
+    height: 617px;
+    padding: 5px 10px;
+}
+
+.moviePosterDescription a {
+    text-decoration: none;
+    color: #d97b1c;
+}
+
+.moviePosterDescription a:hover {
+    text-decoration: none;
+    color: #1c5ed9;
+}
+
+.genreList {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+    font-size: 14px;
+}
+
+.movieMark {
+    display: flex;
+    background: rgb(109, 179, 242); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(109, 179, 242, 1) 0%, rgba(84, 163, 238, 1) 50%, rgba(54, 144, 240, 1) 51%, rgba(30, 105, 222, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(109, 179, 242, 1) 0%, rgba(84, 163, 238, 1) 50%, rgba(54, 144, 240, 1) 51%, rgba(30, 105, 222, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(109, 179, 242, 1) 0%, rgba(84, 163, 238, 1) 50%, rgba(54, 144, 240, 1) 51%, rgba(30, 105, 222, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db3f2', endColorstr='#1e69de', GradientType=0); /* IE6-9 */
+    padding: 15px;
+    border-radius: 45%;
+    font-family: iviSans, Arial, Helvetica, Helvetica Neue, FreeSans, sans-serif
+}
+
+.movieMark h3 {
+    color: #efd33d;
+    margin: 0;
+
+}
+
+
+/********************/
+@media screen and (max-width: 1200px) {
+    .moviePoster {
+        margin: 20px 0 0 40px;
+        width: 50%;
+        max-height: 510px;
+    }
+
+    .moviePoster img {
+        max-width: 80%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .moviePoster {
+        /*margin-left: 40px;*/
+        width: 50%;
+        margin: auto;
+        max-height: 510px;
+    }
+
+    .moviePoster img {
+        max-width: 80%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .moviePoster {
+        margin-left: auto;
+        width: 95%;
+        max-height: max-content;
+    }
+
+    .movieDetail, .movieDetailLight {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .movieDetail, .movieDetailLight {
+        height: auto;
+        align-items: center
+    }
+
+    .moviePosterDescription {
+        height: auto;
+    }
+
+    .detailCard {
+        height: auto;
+    }
+}
+

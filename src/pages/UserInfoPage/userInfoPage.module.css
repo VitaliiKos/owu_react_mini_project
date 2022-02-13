@@ -1,0 +1,24 @@
+.userPage, .userPageLight {
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 20px 10px;
+}
+
+.userPage {
+    background-size: cover;
+    background-image: url("legendDark.jpg");
+}
+
+.userPageLight {
+    background-size: cover;
+    background-image: url("1.jpeg");
+}
+
+
+@media screen and (max-width: 1200px) {
+    .userPage, .userPageLight {
+        padding: 0;
+
+    }
+}
